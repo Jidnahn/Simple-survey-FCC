@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="main">
+            <h1 id="title">SURVEY FORM</h1>
+
+            <p id="description">This is a basic survey form as a practical excercise</p>
+
+            <form id="survey-form">
+                
+                <label for="name" id="name-label" >Enter your name:</label><br>
+                <input type="text" id="name" placeholder="Your name here" required><br><br>
+                <label for="email" id="email-label">Enter your email:</label><br>
+                <input type="email" id="email" required placeholder="name@site.com"><br><br>
+                <label for="number" id="number-label">Enter your age:</label><br>
+                <input type="number" id="number" placeholder="18-99" required min="18" max="99"><br><br>
+                <label for="dropdown">What rank are you?</label><br>
+                <select name="rank" id="dropdown">
+                    <option value="herald">Herald</option>
+                    <option value="guardian">Guardian</option>
+                    <option value="crusader">Crusader</option>
+                    <option value="archon">Archon</option>
+                    <option value="legend">Legend</option>
+                    <option value="ancient">Ancient</option>
+                    <option value="divine">Divine</option>
+                    <option value="Immortal">Immortal</option>
+                </select><br>
+                <input type="radio" id="zero" name="stars" value="zero">
+                <label for="zero" id="zero-label">0 stars</label><br>
+                <input type="radio" id="one" name="stars" value="one">
+                <label for="zero" id="one-label">1 star</label><br>
+                <input type="radio" id="two" name="stars" value="two">
+                <label for="zero" id="two-label">2 stars</label><br>
+                <input type="radio" id="three" name="stars" value="three">
+                <label for="zero" id="three-label">3 stars</label><br>
+                <input type="radio" id="four" name="stars" value="four">
+                <label for="zero" id="four-label">4 stars</label><br>
+                <input type="radio" id="five" name="stars" value="five">
+                <label for="zero" id="five-label">5 stars</label><br>
+                <input type="radio" id="no-stars" name="stars" value="immortal">
+                <label for="zero" id="no-stars-label">Ranked Immortal</label><br><br>
+                <label for="position" id="position-label">What are your favorite roles to play?</label><br>
+                <label>
+                    <input type="checkbox" name="position" id="pos1" value="pos1">Position 1
+                </label><br>
+                <label>
+                    <input type="checkbox" name="position" id="pos2" value="pos2">Position 2
+                </label><br>
+                <label>
+                    <input type="checkbox" name="position" id="pos3" value="pos3">Position 3
+                </label><br>
+                <label>
+                    <input type="checkbox" name="position" id="pos4" value="pos4">Position 4
+                </label><br>
+                <label>
+                    <input type="checkbox" name="position" id="pos5" value="pos5">Position 5
+                </label><br><br>
+                <label for="fav-hero">Tell us who your favorite hero is and why:</label><br>
+                <textarea id="fav-hero" rows="4" cols="50"></textarea><br><br>
+
+                <button id="submit" value="Submit">Submit</button>
+            </form>
+
+        </div>
+    </body>
+</html>
